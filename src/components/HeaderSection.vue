@@ -2,7 +2,11 @@
   <div>
     
     <div id="header-background">
+
       <HeaderNav :headerNavArray="headerNav"/>
+
+      <HeaderJoin/>
+
     </div>
 
   </div>
@@ -10,11 +14,13 @@
 
 <script>
 import HeaderNav from './HeaderNav.vue';
+import HeaderJoin from './HeaderJoin.vue';
 
 export default {
   name: 'HeaderSection',
   components:{
-    HeaderNav
+    HeaderNav,
+    HeaderJoin
   },
   props: {
     
@@ -71,9 +77,9 @@ export default {
 #header-background{
   background-image: url(../assets/home-banner.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
-  height: 1079px;
+  height: 100vh;
 }
 
 </style>
