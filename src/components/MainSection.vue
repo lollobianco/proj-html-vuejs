@@ -121,6 +121,9 @@ import TrialCard from './TrialCard'
 
 .bgimg2{
    background-image: url(../assets/gym_bkgd_bw-compressor.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
 }
 
 .container{
@@ -157,7 +160,7 @@ import TrialCard from './TrialCard'
    margin: 0 auto;
    display: flex;
    justify-content: space-between;
-   padding: 120px 0;
+   padding: 100px 0;
 }
 
 .free-training-img{
