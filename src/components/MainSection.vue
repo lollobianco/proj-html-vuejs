@@ -47,8 +47,12 @@
 
          <div class="img-bg">
 
-            <div>
-               <TrialCard/>
+            <div class='bgimg2'>
+               <div class="container3">
+
+                  <TrialCard v-for="(element, index) in iconsAndText" :key="index" :infosObject="element"/>
+
+               </div>
             </div>
 
          </div>
@@ -59,8 +63,14 @@
 </template>
 
 <script>
+import TrialCard from './TrialCard'
+
    export default {
       name: 'MainSection',
+
+      components:{
+         TrialCard
+      },
 
       data(){
 
@@ -109,6 +119,10 @@
    width: 48%;
 }
 
+.bgimg2{
+   background-image: url(../assets/gym_bkgd_bw-compressor.jpg);
+}
+
 .container{
    width: 50%;
    margin: 0 auto;
@@ -136,6 +150,14 @@
    padding: 90px 0;
    display: flex;
    justify-content: space-between;
+}
+
+.container3{
+   width: 70%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   padding: 120px 0;
 }
 
 .free-training-img{
