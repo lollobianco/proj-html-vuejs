@@ -1,13 +1,13 @@
 <template>
   <div>
-    
-    <div id="header-background">
 
-      <HeaderNav :headerNavArray="headerNav"/>
+      <div id="header-background">
 
-      <HeaderJoin/>
+        <HeaderNav :headerNavArray="headerNav"/>
 
-    </div>
+        <HeaderJoin/>
+
+      </div>
 
   </div>
 </template>
@@ -79,7 +79,6 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
 }
 
 </style>

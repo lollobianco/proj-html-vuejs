@@ -20,7 +20,7 @@
    align-items: center;
    text-align: center;
    color: white;
-   padding-bottom: 150px;
+   padding-bottom: 200px;
 }
 
 .title{
