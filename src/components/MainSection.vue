@@ -59,17 +59,52 @@
 
       </div>
 
+      <!-- Real world results -->
+
+      <div class="bg-dark real-results">
+
+         <h1>REAL WORLD RESULTS</h1>
+
+         <img src="../assets/divider-xx-red.png" alt="xx divider">
+
+         <div class="people-container">
+            <PeopleCard v-for="(element, index) in realWorldResultsData" :key="index" :infosObject="element"/>
+         </div>
+
+      </div>
+
+      <!-- High performance Facilities -->
+
+      <div class="bg-dark high-performance">
+
+         <h1>HIGH PERFORMANCE FACILITIES</h1>
+
+         <img src="../assets/divider-xx-red.png" alt="xx divider">
+
+         <div class="images-container">
+
+            <ImageComponent v-for="(element,index) in ImageComponentUrls" :key="index" :imgUrls="element"/>
+            <!-- <img v-for="(element, index) in ImageComponentUrls" :key="index" :src="element" alt=""> -->
+
+         </div>
+
+      </div>
+
    </div>
 </template>
 
 <script>
 import TrialCard from './TrialCard'
+import PeopleCard from './PeopleCard'
+import ImageComponent from './ImageComponent.vue'
 
    export default {
       name: 'MainSection',
 
       components:{
-         TrialCard
+         TrialCard,
+         PeopleCard,
+         ImageComponent
       },
 
       data(){
@@ -96,6 +131,50 @@ import TrialCard from './TrialCard'
                   icon: 'fa-solid fa-heart-pulse',
                   title: 'Health & Diet',
                   description: ''
+               },
+            ],
+
+            realWorldResultsData: [
+               {
+                  image: '../assets/review_1-compressor.jpg',
+                  description: '“The trainers at Avada Gym have helped me reach my fitness goals beyond anything I could of hoped for. I love it!”',
+                  name: ' - Tara Smith'
+               },
+               {
+                  image: '../assets/review_3-compressor-2.jpg',
+                  description: '“The atmosphere at Avada Gym is amazing, the people are even better. All in all, it is a great place to work out.”',
+                  name: ' - Simon Chel'
+               },
+               {
+                  image: '../assets/review_2-compressor.jpg',
+                  description: '“The facilities at Avada Gym stood out to me the most. They are well maintained and have high quality equipment.”',
+                  name: ' - Jen Wirth'
+               },
+               {
+                  image: '../assets/review_4-compressor-2.jpg',
+                  description: '“No bad things to say about Avada Gym, they are top notch at every corner and truly take care of their customers.”',
+                  name: '- Jeff Glum' 
+               },
+            ],
+
+            ImageComponentUrls: [
+               {
+                  url: '../assets/home-image1.jpg'
+               },
+               {
+                  url: '../assets/home-image2.jpg'
+               },
+               {
+                  url: '../assets/home-image3.jpg'
+               },
+               {
+                  url: '../assets/home-image4.jpg'
+               },
+               {
+                  url: '../assets/home-image54.jpg'
+               },
+               {
+                  url: '../assets/home-image6.jpg'
                },
             ]
 
@@ -207,6 +286,44 @@ import TrialCard from './TrialCard'
       background-color: rgb(218, 218, 218);
       color: #212325;
    }
+}
+
+.real-results{
+   text-align: center;
+   padding: 70px;
+   h1{
+      color: white;
+      margin-bottom: 20px;
+   }
+   img{
+      margin-bottom: 20px;
+   }
+}
+
+
+.people-container{
+   width: 75%;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.high-performance{
+   text-align: center;
+   padding: 70px;
+   h1{
+      color: white;
+      margin-bottom: 20px;
+   }
+   img{
+      margin-bottom: 20px;
+   }
+}
+
+.images-container{
+   display: flex;
+   flex-wrap: wrap;
 }
 
 </style>
