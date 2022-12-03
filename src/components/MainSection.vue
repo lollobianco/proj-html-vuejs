@@ -90,6 +90,22 @@
 
       </div>
 
+      <!-- Bruce Lee -->
+
+      <div class="bgimg3">
+
+         <div class="bruce-container">
+
+            <h1>“ I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times ”</h1>
+
+            <img src="../assets/divider-white-xx.png" alt="">
+
+            <h2>BRUCE LEE • QUOTE OF THE DAY</h2>
+
+         </div>
+
+      </div>
+
    </div>
 </template>
 
@@ -238,6 +254,13 @@ import ImageComponent from './ImageComponent.vue'
    background-position: center;
 }
 
+.bgimg3{
+   background-image: url(../assets/home-testimonial-bg.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
 .container{
    width: 50%;
    margin: 0 auto;
@@ -273,6 +296,21 @@ import ImageComponent from './ImageComponent.vue'
    display: flex;
    justify-content: space-between;
    padding: 100px 0;
+}
+
+.bruce-container{
+   padding: 140px;
+   width: 50%;
+   margin: 0 auto;
+   text-align: center;
+   color: white;
+   h1{
+      font-weight: 500;
+      line-height: 60px;
+   }
+   img{
+      margin: 40px 0;
+   }
 }
 
 .free-training-img{
