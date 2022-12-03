@@ -33,10 +33,10 @@
 
                   <form action="" id="free-training-form">
                      <label for="fname">Name:</label><br>
-                     <input type="text" id="fname" name="fname"><br>
+                     <input type="text" id="fname" name="fname" v-model="name" ><br>
                      <label for="mail">Email:</label><br>
-                     <input type="email" id="mail" name="mail">
-                     <button type="submit" onclick="return false">START NOW!</button>
+                     <input type="email" id="mail" name="mail" v-model="mail" >
+                     <button type="submit" onclick="return false" @click="send()" :class="clickedButton">{{buttonText}}</button>
                   </form>
                   
                </div>
@@ -111,6 +111,11 @@ import ImageComponent from './ImageComponent.vue'
 
          return{
 
+            name: '',
+            mail: '',
+            buttonText: 'START NOW!',
+            registered: false,
+
             iconsAndText: [
                {
                   icon: 'fa-solid fa-link-slash',
@@ -180,12 +185,40 @@ import ImageComponent from './ImageComponent.vue'
 
          }
 
+      },
+      methods:{
+         send(){
+
+            if(this.registered == false){
+
+               if(this.name != '' && this.mail != ''){
+
+                  this.buttonText = 'THANK YOU FOR REGISTERING!'
+                  this.registered = true
+
+                  this.name = ''
+                  this.mail = ''
+
+               } else if (this.name == '' && this.mail == '' || this.name != '' && this.mail == '' || this.name == '' && this.mail != ''){
+
+                  this.buttonText = 'FILL IN ALL THE FIELDS!'
+
+               }
+
+            }  else {
+
+                  this.buttonText = 'YOU HAVE ALREADY REGISTERED!'
+
+               }
+
+         }
       }
       
    }
 </script>
 
 <style lang="scss" scoped>
+
 .bg-dark{
    background-color: #25292B;
 }
@@ -265,9 +298,17 @@ import ImageComponent from './ImageComponent.vue'
    input{
       width: 100%;
       margin: 5px 0 20px 0;
+      padding: 5px;
+      color: #EE6059;
       height: 35px;
       background-color: #212325;
       border: 1px solid #3E4346;
+   }
+
+   input:focus { 
+      outline: none !important;
+      border-color: #EE6059;
+      box-shadow: 0 0 10px #EE6059;
    }
 
    button{
