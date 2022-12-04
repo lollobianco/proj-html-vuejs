@@ -1,6 +1,6 @@
 <template>
-   <div>
-      <img class="w-100" :src="imgUrls.url" alt="">
+   <div class="img-container">
+      <img :src="`./img/${imgUrls.url}`" alt="">
    </div>
 </template>
 
@@ -14,7 +14,19 @@
 </script>
 
 <style lang="scss" scoped>
-.w-100{
-   width: 100%;
+.img-container{
+   margin: 15px 20px;
+   cursor: pointer;
+
+   img{
+      transition: 200ms;
+   }
+
+   img:hover{
+      scale: 1.05;
+      -webkit-box-shadow: 0px 2px 12px 3px #000000; 
+      box-shadow: 0px 2px 12px 3px #000000;
+   }
+
 }
 </style>

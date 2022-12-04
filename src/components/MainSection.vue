@@ -68,7 +68,9 @@
          <img src="../assets/divider-xx-red.png" alt="xx divider">
 
          <div class="people-container">
-            <PeopleCard v-for="(element, index) in realWorldResultsData" :key="index" :infosObject="element"/>
+
+            <PeopleCard/>
+            
          </div>
 
       </div>
@@ -136,66 +138,43 @@ import ImageComponent from './ImageComponent.vue'
                {
                   icon: 'fa-solid fa-link-slash',
                   title: 'Strenght & Conditioning',
-                  description: ''
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.'
                },
                {
                   icon: 'fa-solid fa-bicycle',
                   title: 'Fitness & Cardio',
-                  description: ''
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.'
                },
                {
                   icon: 'fa-brands fa-skyatlas',
                   title: 'Flexibility & Rest',
-                  description: ''
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.'
                },
                {
                   icon: 'fa-solid fa-heart-pulse',
                   title: 'Health & Diet',
-                  description: ''
-               },
-            ],
-
-            realWorldResultsData: [
-               {
-                  image: '../assets/review_1-compressor.jpg',
-                  description: '“The trainers at Avada Gym have helped me reach my fitness goals beyond anything I could of hoped for. I love it!”',
-                  name: ' - Tara Smith'
-               },
-               {
-                  image: '../assets/review_3-compressor-2.jpg',
-                  description: '“The atmosphere at Avada Gym is amazing, the people are even better. All in all, it is a great place to work out.”',
-                  name: ' - Simon Chel'
-               },
-               {
-                  image: '../assets/review_2-compressor.jpg',
-                  description: '“The facilities at Avada Gym stood out to me the most. They are well maintained and have high quality equipment.”',
-                  name: ' - Jen Wirth'
-               },
-               {
-                  image: '../assets/review_4-compressor-2.jpg',
-                  description: '“No bad things to say about Avada Gym, they are top notch at every corner and truly take care of their customers.”',
-                  name: '- Jeff Glum' 
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.'
                },
             ],
 
             ImageComponentUrls: [
                {
-                  url: '../assets/home-image1.jpg'
+                  url: 'home-image1.jpg'
                },
                {
-                  url: '../assets/home-image2.jpg'
+                  url: 'home-image2.jpg'
                },
                {
-                  url: '../assets/home-image3.jpg'
+                  url: 'home-image3.jpg'
                },
                {
-                  url: '../assets/home-image4.jpg'
+                  url: 'home-image4.jpg'
                },
                {
-                  url: '../assets/home-image54.jpg'
+                  url: 'home-image54.jpg'
                },
                {
-                  url: '../assets/home-image6.jpg'
+                  url: 'home-image6.jpg'
                },
             ]
 
@@ -252,13 +231,15 @@ import ImageComponent from './ImageComponent.vue'
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
+   background-attachment: fixed;
 }
 
 .bgimg3{
    background-image: url(../assets/home-testimonial-bg.jpg);
-   background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
 }
 
 .container{
@@ -299,7 +280,7 @@ import ImageComponent from './ImageComponent.vue'
 }
 
 .bruce-container{
-   padding: 140px;
+   padding: 100px;
    width: 50%;
    margin: 0 auto;
    text-align: center;
@@ -341,9 +322,16 @@ import ImageComponent from './ImageComponent.vue'
       height: 35px;
       background-color: #212325;
       border: 1px solid #3E4346;
+      transition: 300ms;
    }
 
    input:focus { 
+      outline: none !important;
+      border-color: #EE6059;
+      box-shadow: 0 0 10px #EE6059;
+   }
+
+   input:hover{
       outline: none !important;
       border-color: #EE6059;
       box-shadow: 0 0 10px #EE6059;
@@ -403,6 +391,7 @@ import ImageComponent from './ImageComponent.vue'
 .images-container{
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
 }
 
 </style>

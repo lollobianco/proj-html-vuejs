@@ -10,7 +10,7 @@
 
       <img class="x-divider" src="../assets/divider-x-red.png" alt="x">
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
+      <p>{{infosObject.description}}</p>
 
    </div>
 
@@ -53,6 +53,12 @@
    align-items: center;
    justify-content: center;
    margin-bottom: 20px;
+   cursor: pointer;
+   transition: 300ms;
+}
+
+.icon:hover{
+   scale: 1.2;
 }
 
 .x-divider{
