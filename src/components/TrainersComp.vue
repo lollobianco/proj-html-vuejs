@@ -70,8 +70,15 @@
    background-color: #25292B;
 }
 
+img:hover{
+   scale: 1.05;
+   box-shadow: 0 0 10px #FFF;
+}
+
 img{
    width: 100%;
+   transition: 300ms;
+   cursor: pointer;
 }
 
 .social-container{

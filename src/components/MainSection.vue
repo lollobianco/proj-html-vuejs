@@ -130,6 +130,29 @@
 
       </div>
 
+      <!-- Performance News -->
+
+      <div class="bg-dark">
+
+         <div class="performance-container">
+
+           <h1>PERFORMANCE NEWS</h1>
+   
+            <img src="../assets/divider-xx-red.png" alt="xx divider">
+
+            <div class="performance-news">
+
+               <NewsCard/>
+            
+            </div> 
+
+            <button class="article-button">READ ALL ARTICLES</button>
+
+         </div>
+         
+
+      </div>
+
    </div>
 </template>
 
@@ -138,6 +161,7 @@ import TrialCard from './TrialCard'
 import PeopleCard from './PeopleCard'
 import ImageComponent from './ImageComponent.vue'
 import TrainersComp from './TrainersComp.vue'
+import NewsCard from './NewsCard.vue'
 
    export default {
       name: 'MainSection',
@@ -146,7 +170,8 @@ import TrainersComp from './TrainersComp.vue'
          TrialCard,
          PeopleCard,
          ImageComponent,
-         TrainersComp
+         TrainersComp,
+         NewsCard
       },
 
       data(){
@@ -221,7 +246,7 @@ import TrainersComp from './TrainersComp.vue'
                   role: 'Personal Trainer',
                   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.'
                },
-            ]
+            ],
 
          }
 
@@ -454,6 +479,8 @@ import TrainersComp from './TrainersComp.vue'
 }
 
 .images-container{
+   width: 80%;
+   margin: 0 auto;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
@@ -482,4 +509,39 @@ import TrainersComp from './TrainersComp.vue'
    border: #EE6059;
    box-shadow: 0 0 15px #EE6059;
 }
+
+.performance-container{
+   text-align: center;
+   color: white;
+   padding: 100px 0;
+   img{
+      margin: 40px 0;
+   }
+}
+
+
+.performance-news{
+   width: 70%;
+   margin: 0 auto;
+}
+
+.article-button{
+   padding: 15px 30px;
+   margin-top: 10px;
+   background-color: rgba(0, 0, 0, 0);
+   color: #A8A8A7;
+   border: 1px solid #A8A8A7;
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+.article-button:hover{
+   background-color: #F4635B;
+   font-size: 0.9rem;
+   color: black;
+   border: #EE6059;
+   box-shadow: 0 0 15px #EE6059;
+}
+
+
 </style>

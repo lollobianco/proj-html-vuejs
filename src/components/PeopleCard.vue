@@ -61,6 +61,8 @@
    padding: 20px;
    margin: 10px;
    text-align: left;
+   transition: 300ms;
+   cursor: pointer;
 
    p{
       margin-bottom: 20px;
@@ -76,6 +78,21 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-
 }
+
+img{
+   transition: 300ms;
+   margin-bottom: 0;
+   display: block;
+}
+
+.card:hover img{
+   scale: 1.1;
+}
+
+.card:hover{
+   scale: 1.02;
+   box-shadow: 0 0 10px #FFF;
+}
+
 </style>

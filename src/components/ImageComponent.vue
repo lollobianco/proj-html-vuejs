@@ -15,11 +15,14 @@
 
 <style lang="scss" scoped>
 .img-container{
-   margin: 15px 20px;
+   width: calc(90%/3);
+   margin: 15px 15px;
    cursor: pointer;
 
    img{
+      width: 100%;
       transition: 200ms;
+      display: block;
    }
 
    img:hover{
