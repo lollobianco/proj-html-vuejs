@@ -58,7 +58,7 @@
 }
 
 .icon:hover{
-   scale: 1.2;
+   scale: 1.1;
    transform: rotate(360deg);
    box-shadow: 0 0 15px #EE6059;
 }

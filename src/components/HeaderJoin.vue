@@ -41,7 +41,8 @@
 #join-us:hover{
    background-color: #F4635B;
    color: black;
-   border-color: black;
+   border-color: #EE6059;
+   box-shadow: 0 0 15px #EE6059;
    font-size: 0.9rem;
 }
 </style>
