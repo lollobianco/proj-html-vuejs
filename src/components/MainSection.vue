@@ -124,7 +124,11 @@
 
             </div>
 
-            <button class="trainers-button">VIEW ALL TRAINERS</button>
+            <div class="button-container">
+               <button class="trainers-button">VIEW ALL TRAINERS</button>
+            </div>
+
+            
 
          </div>
 
@@ -146,7 +150,9 @@
             
             </div> 
 
-            <button class="article-button">READ ALL ARTICLES</button>
+            <div class="button-container">
+               <button class="article-button">READ ALL ARTICLES</button>
+            </div>
 
          </div>
          
@@ -492,9 +498,16 @@ import NewsCard from './NewsCard.vue'
    justify-content: center;
 }
 
+.button-container{
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 40px;
+}
+
 .trainers-button{
    padding: 15px 30px;
-   margin-top: 60px;
    background-color: rgba(0, 0, 0, 0);
    color: #A8A8A7;
    border: 1px solid #A8A8A7;
@@ -515,7 +528,7 @@ import NewsCard from './NewsCard.vue'
    color: white;
    padding: 100px 0;
    img{
-      margin: 40px 0;
+      margin: 40px 0 0 0;
    }
 }
 
@@ -527,7 +540,6 @@ import NewsCard from './NewsCard.vue'
 
 .article-button{
    padding: 15px 30px;
-   margin-top: 10px;
    background-color: rgba(0, 0, 0, 0);
    color: #A8A8A7;
    border: 1px solid #A8A8A7;

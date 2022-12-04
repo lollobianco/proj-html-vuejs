@@ -160,7 +160,7 @@
 }
 
 .card{
-   margin-bottom: 40px;
+   margin-top: 40px;
 }
 
 .text{
