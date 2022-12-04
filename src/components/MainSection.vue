@@ -326,7 +326,7 @@ import TrainersComp from './TrainersComp.vue'
 }
 
 .bruce-container{
-   padding: 100px;
+   padding: 80px;
    width: 50%;
    margin: 0 auto;
    text-align: center;
@@ -399,6 +399,7 @@ import TrainersComp from './TrainersComp.vue'
       box-shadow: 0 0 10px #EE6059;
    }
 
+
    button{
       margin-top: 12px;
       width: 100%;
@@ -414,6 +415,8 @@ import TrainersComp from './TrainersComp.vue'
    button:hover{
       background-color: rgb(218, 218, 218);
       color: #212325;
+      font-size: 0.9rem;
+      box-shadow: 0 0 15px #fff;
    }
 }
 
@@ -474,7 +477,9 @@ import TrainersComp from './TrainersComp.vue'
 
 .trainers-button:hover{
    background-color: #F4635B;
+   font-size: 0.9rem;
    color: black;
-   border-color: black;
+   border: #EE6059;
+   box-shadow: 0 0 15px #EE6059;
 }
 </style>

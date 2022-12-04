@@ -54,11 +54,13 @@
    justify-content: center;
    margin-bottom: 20px;
    cursor: pointer;
-   transition: 300ms;
+   transition: 250ms;
 }
 
 .icon:hover{
    scale: 1.2;
+   transform: rotate(360deg);
+   box-shadow: 0 0 15px #EE6059;
 }
 
 .x-divider{

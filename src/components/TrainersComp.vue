@@ -67,7 +67,7 @@
 }
 
 .trainerCard{
-   background-color: #25292B;;
+   background-color: #25292B;
 }
 
 img{
@@ -95,5 +95,7 @@ img{
 
 .logo-container:hover{
    color: #F4635B;
+   scale: 1.2;
+   box-shadow: 0 0 5px #25292B;
 }
 </style>

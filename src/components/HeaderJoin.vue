@@ -42,5 +42,6 @@
    background-color: #F4635B;
    color: black;
    border-color: black;
+   font-size: 0.9rem;
 }
 </style>

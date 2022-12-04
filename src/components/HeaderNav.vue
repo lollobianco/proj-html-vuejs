@@ -65,11 +65,13 @@ ul{
       
       a{
          text-decoration: none;
+         transition: 300ms;
       }
 
       a:hover{
          text-decoration: underline;
          text-decoration-color: #F4635B;
+         font-size: 0.9rem;
       }
    
    }
