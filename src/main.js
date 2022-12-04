@@ -21,7 +21,9 @@ import { faStarHalfStroke } from '@fortawesome/free-regular-svg-icons';
 
 import { faSkyatlas } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faUserSecret, faBicycleSolid, faStarRegular, faStarHalfStroke, faLinkSlashSolid, faSkyatlas, faHeartPulseSolid)
+import {faFacebookF, faTwitter, faInstagram} from '@fortawesome/free-brands-svg-icons'
+
+library.add(faUserSecret, faBicycleSolid, faStarRegular, faStarHalfStroke, faLinkSlashSolid, faSkyatlas, faHeartPulseSolid, faFacebookF, faTwitter, faInstagram)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

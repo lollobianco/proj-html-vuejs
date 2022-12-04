@@ -108,6 +108,28 @@
 
       </div>
 
+      <!-- Meet out trainers -->
+
+      <div class="bg-dark2">
+
+         <div class="meet-us-container">
+            
+            <h1>MEET OUR TRAINERS</h1>
+   
+            <img src="../assets/divider-xx-red.png" alt="xx divider">
+
+            <div class="cards-container">
+
+               <TrainersComp v-for="(element, index) in trainers" :key="index" :trainerObj="element" />
+
+            </div>
+
+            <button class="trainers-button">VIEW ALL TRAINERS</button>
+
+         </div>
+
+      </div>
+
    </div>
 </template>
 
@@ -115,6 +137,7 @@
 import TrialCard from './TrialCard'
 import PeopleCard from './PeopleCard'
 import ImageComponent from './ImageComponent.vue'
+import TrainersComp from './TrainersComp.vue'
 
    export default {
       name: 'MainSection',
@@ -122,7 +145,8 @@ import ImageComponent from './ImageComponent.vue'
       components:{
          TrialCard,
          PeopleCard,
-         ImageComponent
+         ImageComponent,
+         TrainersComp
       },
 
       data(){
@@ -176,11 +200,33 @@ import ImageComponent from './ImageComponent.vue'
                {
                   url: 'home-image6.jpg'
                },
+            ],
+
+            trainers: [
+               {
+                  image: 'trainer1.jpg',
+                  name: 'Ann Baker',
+                  role: 'Personal Trainer',
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.'
+               },
+               {
+                  image: 'trainer3.jpg',
+                  name: 'Anne Warren',
+                  role: 'Personal Trainer',
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.'
+               },
+               {
+                  image: 'trainer4.jpg',
+                  name: 'Peter Rice',
+                  role: 'Personal Trainer',
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.'
+               },
             ]
 
          }
 
       },
+
       methods:{
          send(){
 
@@ -294,6 +340,22 @@ import ImageComponent from './ImageComponent.vue'
    }
 }
 
+.meet-us-container{
+   text-align: center;
+   width: 70%;
+   margin: 0 auto;
+   padding: 100px 0;
+
+   h1{
+      color: white;
+   }
+
+   img{
+      margin: 40px;
+   }
+
+}
+
 .free-training-img{
    width: 100%;
 }
@@ -394,4 +456,25 @@ import ImageComponent from './ImageComponent.vue'
    justify-content: center;
 }
 
+
+.cards-container{
+   display: flex;
+   justify-content: center;
+}
+
+.trainers-button{
+   padding: 15px 30px;
+   margin-top: 60px;
+   background-color: rgba(0, 0, 0, 0);
+   color: #A8A8A7;
+   border: 1px solid #A8A8A7;
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+.trainers-button:hover{
+   background-color: #F4635B;
+   color: black;
+   border-color: black;
+}
 </style>
