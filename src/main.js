@@ -13,6 +13,8 @@ import { faBicycle as faBicycleSolid } from '@fortawesome/free-solid-svg-icons'
 
 import { faHeartPulse as faHeartPulseSolid } from '@fortawesome/free-solid-svg-icons'
 
+import {faBookOpen as faBookOpenSolid} from '@fortawesome/free-solid-svg-icons'
+
 import { faLinkSlash as faLinkSlashSolid} from '@fortawesome/free-solid-svg-icons'
 
 import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons'
@@ -23,7 +25,7 @@ import { faSkyatlas } from '@fortawesome/free-brands-svg-icons'
 
 import {faFacebookF, faTwitter, faInstagram} from '@fortawesome/free-brands-svg-icons'
 
-library.add(faUserSecret, faBicycleSolid, faStarRegular, faStarHalfStroke, faLinkSlashSolid, faSkyatlas, faHeartPulseSolid, faFacebookF, faTwitter, faInstagram)
+library.add(faUserSecret, faBicycleSolid, faStarRegular, faStarHalfStroke, faLinkSlashSolid, faSkyatlas, faHeartPulseSolid, faFacebookF, faTwitter, faInstagram, faBookOpenSolid)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

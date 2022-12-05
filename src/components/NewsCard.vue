@@ -6,7 +6,7 @@
    
          <div class="card">
    
-            <img :src="`./img/${newsCardData[0].image}`" alt="">         
+            <img :src="`./img/${newsCardData[0].image}`" alt="">      
    
             <div class="text">
    
@@ -20,7 +20,7 @@
    
          <div class="card">
    
-            <img :src="`./img/${newsCardData[3].image}`" alt="">         
+            <img :src="`./img/${newsCardData[3].image}`" alt="">      
    
             <div class="text">
    
@@ -38,7 +38,7 @@
    
          <div class="card">
 
-            <img :src="`./img/${newsCardData[1].image}`" alt="">         
+            <img :src="`./img/${newsCardData[1].image}`" alt="">      
 
             <div class="text">
 
@@ -52,7 +52,7 @@
 
          <div class="card">
 
-            <img :src="`./img/${newsCardData[4].image}`" alt="">         
+            <img :src="`./img/${newsCardData[4].image}`" alt="">      
 
             <div class="text">
 
@@ -70,7 +70,7 @@
 
          <div class="card">
    
-            <img :src="`./img/${newsCardData[2].image}`" alt="">         
+            <img :src="`./img/${newsCardData[2].image}`" alt="">      
    
             <div class="text">
    
@@ -84,13 +84,14 @@
    
          <div class="card">
    
-            <img :src="`./img/${newsCardData[5].image}`" alt="">         
+            <img :src="`./img/${newsCardData[5].image}`" alt="">     
    
             <div class="text">
    
                <div class="title">{{newsCardData[5].title}}</div>
    
                <div class="description">{{newsCardData[5].description}}</div>
+
    
             </div> 
    
@@ -161,6 +162,7 @@
 
 .card{
    margin-top: 40px;
+   cursor: pointer;
 }
 
 .text{
@@ -173,6 +175,7 @@
    font-weight: bold;
    font-size: 1.5rem;
    color: white;
+   transition: 300ms;
 }
 
 .description{
@@ -186,6 +189,15 @@ img{
    width: 100%;
    display: block;
    cursor: pointer;
+   transition: 300ms;
+}
+.card:hover img {
+	transform: scale(1.02);
+   opacity: 0.4
 }
 
+.card:hover .title{
+   color: rgba(238, 96, 89, 0.7);
+
+}
 </style>
