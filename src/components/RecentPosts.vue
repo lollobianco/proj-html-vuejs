@@ -1,8 +1,12 @@
 <template>
    <div class="recent-post">
-      <font-awesome-icon icon="fa-solid fa-angle-down" class="angle"/>
-      <span class="text">{{postObj.title}}</span>
-      <div class="divider"></div>
+      <div>
+         <font-awesome-icon icon="fa-solid fa-angle-down" class="angle"/>
+      </div>
+      <div>
+         <span class="text">{{postObj.title}}</span>
+         <div class="divider"></div>
+      </div>
    </div>
 </template>
 
@@ -30,13 +34,15 @@
 .angle{
    color: #A0A0A0;
    font-size: 0.8rem;
-   margin: 0 5px;
+   margin-right: 5px;
    transition: 300ms;
    transform: rotate(-90deg);
 }
 
 .recent-post{
    cursor: pointer;
+   display: flex;
+   margin-top: 10px;
 }
 
 .recent-post:hover .angle{
