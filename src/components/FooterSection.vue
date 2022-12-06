@@ -70,13 +70,13 @@
 
             <div class="ul-container">
                <ul class="footer-ul">
-                  <li><a href="#">© Copyright 2012 - 2022</a></li>
+                  <li><a href="https://github.com/lollobianco">© Copyright 2012 - 2022</a></li>
                   <li>|</li>
-                  <li><a href="#">Avada Theme by Lorenzo Bianconi</a></li>
+                  <li><a href="https://github.com/lollobianco">Avada Theme by Lorenzo Bianconi</a></li>
                   <li> | </li>
-                  <li><a href="#">All Rights Reserved</a></li>
+                  <li><a href="https://github.com/lollobianco">All Rights Reserved</a></li>
                   <li> | </li>
-                  <li><a href="#">Powered by Lorenzo Bianconi</a></li>
+                  <li><a href="https://github.com/lollobianco">Powered by Lorenzo Bianconi</a></li>
                </ul>
             </div>
 
@@ -120,7 +120,7 @@ import OpeningTimes from './OpeningTimes.vue'
                   info: 'New York, NY 555555',
                },
                {
-                  info: 'Phone: 1.800.555.6789',
+                  info: 'Phone: +39 334.561.4922',
                },
                {
                   info: 'Mail: loreb2002@gmail.com'
@@ -213,8 +213,8 @@ import OpeningTimes from './OpeningTimes.vue'
 }
 
 .section{
-   width: calc(100%/4);
-   padding: 20px;
+   // width: calc(100%/4);
+   padding: 30px;
 }
 .footer-2{
    background-color: #1A1C1E;
@@ -244,6 +244,11 @@ import OpeningTimes from './OpeningTimes.vue'
          text-decoration: none;
          color: #A0A0A0;
          font-size: 0.7rem;
+      }
+
+      a:hover{
+         text-decoration: underline;
+         text-decoration-color: #F4635B;
       }
    }
 }

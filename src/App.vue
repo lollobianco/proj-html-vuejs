@@ -33,4 +33,17 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+
+body::-webkit-scrollbar {
+   width: 5px;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #EE6059;    
+  border-radius: 50px;       
+}
+
+body{
+  overflow: overlay;
+}
 </style>
