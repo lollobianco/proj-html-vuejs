@@ -331,7 +331,7 @@ import NewsCard from './NewsCard.vue'
    color: white;
 
    img{
-      margin: 30px 0;
+      margin: 40px 0;
    }
 
    span{
@@ -456,10 +456,9 @@ import NewsCard from './NewsCard.vue'
    padding: 70px;
    h1{
       color: white;
-      margin-bottom: 20px;
    }
    img{
-      margin-bottom: 20px;
+      margin: 40px;
    }
 }
 
@@ -477,10 +476,9 @@ import NewsCard from './NewsCard.vue'
    padding: 70px;
    h1{
       color: white;
-      margin-bottom: 20px;
    }
    img{
-      margin-bottom: 20px;
+      margin: 40px;
    }
 }
 
