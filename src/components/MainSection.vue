@@ -528,7 +528,7 @@ import NewsCard from './NewsCard.vue'
    color: white;
    padding: 100px 0;
    img{
-      margin: 40px 0 0 0;
+      margin: 40px 0 20px 0;
    }
 }
 
